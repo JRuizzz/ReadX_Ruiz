@@ -1,18 +1,22 @@
 package model;
 import java.util.Calendar;
 public abstract class BiblioProducts {
+    
     private String name;
     private String id;
     private int numberPages;
     private Calendar postDate;
+    private int value;
     private int readedPages;
-    
-    public BiblioProducts(String name, String id, int numberPages, Calendar postDate, int readedPages) {
+    private String URL;
+
+    public BiblioProducts(String name, String id, int numberPages, Calendar postDate, int value,int readedPages, String URL) {
         this.name = name;
         this.id = id;
         this.numberPages = numberPages;
         this.postDate = postDate;
         this.readedPages = readedPages;
+        this.URL = URL;
     }
 
     public String getName() {
@@ -55,6 +59,22 @@ public abstract class BiblioProducts {
         this.readedPages = readedPages;
     }
 
+    public String getURL() {
+        return URL;
+    }
+
+    public void setURL(String URL) {
+        this.URL = URL;
+    }
+
+    public int getValue() {
+        return value;
+    }
+
+    public void setValue(int value) {
+        this.value = value;
+    }
+    
 
     
     

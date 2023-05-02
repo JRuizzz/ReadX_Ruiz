@@ -8,5 +8,7 @@ public class Premium extends User {
         super(nameUser, cc, vinculationDate);
         
     }
+
+ 
     
 }
