@@ -1,5 +1,8 @@
 package model;
 import java.util.Calendar;
+import java.text.SimpleDateFormat;
+import java.text.DateFormat;
+
 public abstract class BiblioProducts {
     
     private String name;
@@ -9,7 +12,7 @@ public abstract class BiblioProducts {
     private int value;
     private int readedPages;
     private String URL;
-
+    private DateFormat formatter;
     public BiblioProducts(String name, String id, int numberPages, Calendar postDate, int value,int readedPages, String URL) {
         this.name = name;
         this.id = id;
@@ -17,6 +20,8 @@ public abstract class BiblioProducts {
         this.postDate = postDate;
         this.readedPages = readedPages;
         this.URL = URL;
+        this.formatter = new SimpleDateFormat("dd/M/yyyy");
+
     }
 
     public String getName() {
@@ -46,7 +51,9 @@ public abstract class BiblioProducts {
     public Calendar getPostDate() {
         return postDate;
     }
-
+    public String getPostDateFormated(){
+		return formatter.format(this.postDate.getTime());
+	}
     public void setPostDate(Calendar postDate) {
         this.postDate = postDate;
     }
@@ -75,7 +82,7 @@ public abstract class BiblioProducts {
         this.value = value;
     }
     
-
+    
     
     
 }

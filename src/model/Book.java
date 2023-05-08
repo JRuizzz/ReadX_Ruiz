@@ -2,7 +2,7 @@ package model;
 
 import java.util.Calendar;
 
-public class Book extends BiblioProducts{
+public class Book extends BiblioProducts {
     
     private String shortReview;
     private Genre genre;
