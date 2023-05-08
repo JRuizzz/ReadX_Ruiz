@@ -122,7 +122,7 @@ public String viewBookDetails(int bookIndex) {
             msg += "URL: " + selectedBook.getURL() + "\n";
             msg += "Value: " + selectedBook.getValue() + "\n";
             msg += "Number of Sold Books: " + selectedBook.getNumSoldBooks() + "\n";
-            msg += "Post Date: " + selectedBook.getPostDate() + "\n";
+            msg += "Post Date: " + selectedBook.getPostDateFormated() + "\n";
             msg += "Readed Pages: " + selectedBook.getReadedPages() + "\n";
         }
     }

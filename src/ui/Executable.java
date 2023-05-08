@@ -34,8 +34,8 @@ public class Executable {
 
 			System.out.println("1. Sign Up");
 			System.out.println("2. Manage bibliographic products");
-			System.out.println("VIEW");
-			System.out.println("3. Exit");
+			System.out.println("3.VIEW");
+			System.out.println("4. Exit");
 			int option = lector.nextInt();
 
 			switch (option) {
@@ -151,7 +151,7 @@ public class Executable {
 		lector.nextLine(); // Limpia el buffer de la nueva línea pendiente
 		System.out.println("Type the front page URL");
 		String URL = lector.nextLine();
-	
+		
 		System.out.println("Type the value of the product");
 		int value = lector.nextInt();
 	

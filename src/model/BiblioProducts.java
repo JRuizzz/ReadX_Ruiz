@@ -18,6 +18,7 @@ public abstract class BiblioProducts {
         this.id = id;
         this.numberPages = numberPages;
         this.postDate = postDate;
+        this.value= value;
         this.readedPages = readedPages;
         this.URL = URL;
         this.formatter = new SimpleDateFormat("dd/M/yyyy");
